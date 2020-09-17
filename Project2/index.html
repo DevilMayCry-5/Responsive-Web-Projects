@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Marina Internatonal School Registration Form</h1>
+        <p id="description">Please fill the form below with accurate details</p>
+    </header>
+
+    <form id="survey-form" action="" method="post">
+        <label for="name">
+            Full Name <br>
+            <input type="text" name="name" id="name" required>
+        </label><br>
+        <br>
+
+        <label for="email">
+            Email <br>
+            <input type="email" name="email" id="email" required>
+        </label><br>
+        <br>
+
+        <label for="number">
+            Age(optional) <br>
+            <input type="number" name="age" id="number" min="5" max="13" required>
+        </label><br>
+        <br>
+
+        <label for="">
+            Level to Start<br>
+            <select name="Level" id="level" >
+                <option value="nursery">Nursery</option>
+                <option value="reception">Reception</option>
+                <option value="year 1">Year 1</option>
+                <option value="year 2">Year 2</option>
+                <option value="year 1">Year 3</option>
+                <option value="year 2">Year 4</option>
+                <option value="year 1">Year 5</option>
+                <option value="year 2">Year 6</option>
+            </select>
+        </label> <br>
+        <br>
+
+        <label for="opinion">
+            What are the features you look for in a school? <br>
+            <label for="safety">
+                <input type="checkbox" name="safety" id="safety">
+                Safe and friendly environment
+            </label><br>
+            <label for="it">
+                <input type="checkbox" name="IT" id="it">
+                Inclusion of IT
+            </label><br>
+            <label for="professionalism">
+                <input type="checkbox" name="professionalism" id="professionalism">
+                Professionalism
+            </label><br>
+            <label for="trips">
+                <input type="checkbox" name="trips" id="trips">
+                Road trips
+            </label><br>
+            <label for="sports">
+                <input type="checkbox" name="sports" id="sports">
+                Sporting activities
+            </label><br>        
+        </label>
+        <br>
+        
+        <label for="Advert">
+            How did you hear about us?<br>
+            <label for="web">
+                <input type="radio" name="advert" id="web">
+                The Internet
+            </label><br>
+            <label for="newspaper">
+                <input type="radio" name="advert" id="newspaper">
+                Newspaper
+            </label><br>
+            <label for="radio">
+                <input type="radio" name="advert" id="radio">
+                Local Radio
+            </label><br>
+            <label for="friend">
+                <input type="radio" name="advert" id="friend">
+                Friend
+            </label><br>
+            <label for="others">
+                <input type="radio" name="advert" id="others">
+                Others
+            </label><br>
+        </label>   
+        <br>
+
+        <label for="comments">
+            Comments or suggestions <br>
+            <textarea name="comments" id="comments" cols="70" rows="10" class="survey-form"></textarea>
+        </label> 
+        <br>
+
+        <label for="">
+            <input type="submit" name="submit" id="" value="Submit">
+            <input type="reset" value="Reset">       
+        </label>
+    </form>
+</body>
+</html>
